@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let email = "sithu@gmail.com";
+    let password = "test";
+
+    // &&
+    if (email == "sithu@gmail.com" && password == "sithu") {
+      // false
+      console.log("login success");
+    } else {
+      console.log("login fail");
+    }
+
+    // ||
+    if (email == "sithu@gmail.com" || password == "sithu") {
+      // true
+      console.log("login success");
+    } else {
+      console.log("login fail");
+    }
+
+    // ?
+    let status = true;
+
+    console.log(!status); // false
+
+    // shortcut
+    if (!status) {
+      // if status is false??
+      console.log("OK");
+    } else {
+      console.log("fail");
+    }
+  </script>
+</html>
