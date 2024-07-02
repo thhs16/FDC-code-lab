@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Tables Teacher's Version</title>
+</head>
+<body></body>
+
+<script>
+    let confirmBox = confirm("Do you want to start?"); // True False
+    // console.log(confirmBox);
+    
+    if(confirmBox){
+        
+        let digit = prompt("Enter your digit..."); // string input
+        let times = prompt("Enter your times..."); // string input
+
+        // console.log( digit && times != "" ); // what is the error??? not showing false
+        console.log( digit != "" && times != "" );
+
+        if( digit != "" && times != "" ){
+
+            for (let i = 1; i <= times; i++) {
+                document.write( `${digit} × ${i} = ${digit * i}<br>` );
+            }
+        }else{
+            document.write("One of your inputs has the empty value... Reload and try again...")
+        }
+    }else{
+
+        document.write("The program will not start.")
+    }
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Tables</title>
+  </head>
+  <body>
+    <h1>Multiplication Tables Version 2</h1>
+  </body>
+  <script>
+    // Bug : times check --> digit check
+    // Solution : digit check --> times check, asking with prompt (see in Ver 3)
+    let digit = prompt("Enter a number ");
+    let times = prompt("Enter the times"); // if the promt is clicked ok with no input, times = ''
+1
+    if (times == null || times == "") {
+      document.write("The operation failed");
+
+    } else {
+
+      if (digit == null || digit == "") {
+        document.write("You did not enter anything for the number<br>Please reload the page");
+
+      } else {
+
+        for (let i = 1; i <= times; i++) {
+          // console.log( typeof digit, typeof i, typeof times ); // string number
+          // console.log( digit * times ); // string string
+          // console.log( digit + times ); // string string // error
+
+          document.write( `${digit} × ${i} = ${digit * i}<br>` );
+        }
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looping</title>
+  </head>
+  <body></body>
+  <script>
+
+    // while loop
+    let data = 5;
+    while (data < 10) {
+      console.log("Hello" + data);
+      data++; // data++ and ++ data is the same here
+      // console.log("data"+data);
+    }
+
+    console.log("the end");
+
+
+
+    // do while loop
+    data = 5; //declare
+    do {
+      console.log("This is Do_while" + data);
+      data++; //terminate
+    } while (data == 4); // exp
+
+
+    // for loop
+    let num = ['one', 'two', 'three'];
+    for(let i=0; i < num.length; i++ ){
+        console.log(num.length);
+        console.log(num[i]);
+    }
+
+    // for_In | for_Each
+    console.log("ForEach");
+    num.forEach(element => {
+        console.log(element);
+    });
+  </script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body></body>
+
+<script>
+    // Function is only processed after declaring it.
+    // Can declare so many times and it works so many times
+    // Parameters or arguements --> to use outside variables used in function
+
+    // First way
+    function greeting(){
+        document.write("Hello World");
+    }
+ 
+    greeting(); // declare
+    greeting(); // declare
+    greeting(); // declare
+
+    // Sec way
+    let morning = function(){
+        document.write("Good Morning");
+    }
+
+    function callUser(name){ // one arguement function
+        document.write("My name is "+name);
+    }
+    callUser(); // Undefined --> name
+    callUser('rola'); // rola --> name
+
+
+    function name(name = 'sithu'){ // Default parameter
+        document.write("My name is "+name);
+    }
+    name(); // sithu --> default
+    
+
+    function sum(num1 , num2){
+        document.write( `sum ${num1 + num2}` );
+    }
+    sum(1);
+
+    // typed function (or) function with return keyword
+    function subtraction(num1 , num2){
+        return num1 + num2;
+    }
+
+    subtraction(1,2);
+    document.write( subtraction(1,2) );
+
+    // ES6
+
+    
+</script>
+</html>

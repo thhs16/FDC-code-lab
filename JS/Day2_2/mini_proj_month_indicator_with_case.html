@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Indicator</title>
+</head>
+<body>
+    <!-- This mini-project can be useful when converting user's number input of their birthdate or other dates into months' names -->
+    <!-- E.g., Asking birthdate in KMUTT website12 -->
+
+    <h1>Month Indicator</h1>
+</body>
+<script>
+    let userData = prompt("Enter the number of the month 1-12"); // string
+    console.log(typeof userData);
+
+    // cannot write like this because object pathway is short
+
+    // let userOutput = document.write();
+    // console.log(typeof userOutput);
+
+    switch(userData){
+        case "1": document.write("This is January."); break;
+        case "2": document.write("This is February."); break;
+        case "3": document.write("This is March."); break;
+        case "4": document.write("This is April."); break;
+        case "5": document.write("This is May."); break;
+        case "6": document.write("This is June."); break;
+        case "7": document.write("This is July."); break;
+        case "8": document.write("This is August."); break;
+        case "9": document.write("This is September."); break;
+        case "10": document.write("This is October."); break;
+        case "11": document.write("This is November."); break;
+        case "12": document.write("This is December."); break;
+
+        default : document.write("You did not enter anything."); break; 
+
+    }
+</script>
+</html>
