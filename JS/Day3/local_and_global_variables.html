@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Global variables</title>
+</head>
+<body>
+    <h1>Local and Global variables</h1>
+</body>
+<script>
+    // Check whether var keyword is global variable
+    let name = 'rola';
+
+    let getName = () => {
+        document.write(name);
+
+        let job = 'programmer';
+    }
+
+    getName();
+    // document.write(job); //undefined // let is local var
+</script>
+</html>

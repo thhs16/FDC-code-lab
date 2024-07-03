@@ -46,14 +46,54 @@
 
     // typed function (or) function with return keyword
     function subtraction(num1 , num2){
-        return num1 + num2;
+        return num1 - num2;
     }
 
     subtraction(1,2);
     document.write( subtraction(1,2) );
 
-    // ES6
+    // ES6 way // used in Vue and Angular
+    let testing = () => {
+        return "<br>This is testing message.<br>"
+    }
+    document.write( testing() );
 
+    let multiplication = ( num1 , num2 ) => {
+        return num1 * num2;
+    }
+    document.write( multiplication(5,2) +"<br>" ) // 3
+
+    // ES6 return shortcut 
+    let division = (num1,num2) => num1/num2; // less used
+
+    document.write( division(6,3) +"<br>" ) // 3
+
+
+    // returnArray
+    let returnArray = () => [1,2,3];
+    document.write("Return Array <br>")
+
+    returnArray().forEach(element => {
+        document.write(element, "<br>");
+    });
+
+    //returnObj
+    let returnObj = () => ( { name : "Rola", town : "New York" } );
+    document.write("Return Object <br>")
+
+    let result = returnObj();
+
+    // result.forEach(element => { // this is not working
+    //     document.write( element, "<br>" );
+    // });
+
+    // returnObj().name; // why is this not working?
+    
+    // let result = returnObj();
+    document.write(result.name);
+    // document.write(result.name); // this is working
+
+    
     
 </script>
 </html>

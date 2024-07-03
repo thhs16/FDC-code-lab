@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+</body>
+<script>
+
+    // first way
+    let newArray = [1, 0.1, -2, 'sithu', 'codelab'];
+
+    for(let i = 0; i < newArray.length; i++){
+        console.log(newArray[i]);
+    }
+
+    newArray.forEach(element => {
+        console.log(element);
+    });
+
+    // Sec way // less used
+    let secArray = new Array();
+    
+    secArray[0] = 1;
+    secArray[1] = 0.1;
+    console.log(secArray);
+    
+    for(let i = 0; i < secArray.length; i++){
+        console.log(secArray[i]);
+    }
+
+    // push pop unshift shift
+    let arr = ['one', 'two', 'three'];
+
+    // arr.push('newValue'); // add value at the end
+    // arr.pop(); // delete value at the end
+    // arr.unshift('newValue'); // add value at the beginning
+    // arr.shift(); // delete value at the beginning
+    console.log(arr);
+
+    // concat (connect or append and return a new array)
+    let thirdArr = ['a', 'b', 'c'];
+    
+    let newThirdArr = arr.concat(thirdArr);
+    console.log(newThirdArr);
+    
+</script>
+</html>
