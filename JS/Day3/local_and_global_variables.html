@@ -10,6 +10,8 @@
 </body>
 <script>
     // Check whether var keyword is global variable
+    // var is global scope only for conditional statement like if
+    // variable with any keyword is global scope can be used anywhere
     let name = 'rola';
 
     let getName = () => {
@@ -18,7 +20,52 @@
         let job = 'programmer';
     }
 
-    getName();
-    // document.write(job); //undefined // let is local var
+        // getName();
+        // document.write(job); //undefined // let is local variable
+
+    // function global scope
+    let num = 1;
+
+    let greeting = () => {
+        item = 'watch'; // global scope for function without any keyword
+        let color = 'red'; // local scope
+    }
+
+    greeting();
+    // console.log( item );
+
+    try{
+        // console.log( color ); // undefined
+    }catch(e){
+        console.log('error =>', e);
+    }
+
+        // console.log( greeting().item ); //error => greeting() is a function, not obj
+    
+    // conditional statement global scope
+    if( 10 == 10 ){
+        var design = 'web';
+        language = 'JS';
+        let db = 'MySql';
+        const developer = 'rola';
+    }
+
+    console.log( design ); // OK -> global
+    console.log( language ); // OK -> global
+
+    try{
+    console.log( db ); // Not ok -> local
+    console.log( developer ); // Not ok -> local
+    }catch(e){
+        console.log('error =>',e);
+    }
+
+    // variable without a keyword - testing
+    sir = 'sithu';
+    console.log(sir);
+
+
+    
+    
 </script>
 </html>
