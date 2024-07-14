@@ -6,7 +6,7 @@
     console.log(arr3);
 
     // adding array 2
-    let arr3_2 = arr.concat(arr2);
+    let arr3_2 = arr.concat(arr2); // return value => accept it with a variable
     console.log(arr3_2);
     
     // cloning array 1
