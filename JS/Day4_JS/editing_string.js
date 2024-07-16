@@ -34,3 +34,17 @@
     let my_new_name = my_name.split('o'); // 'o' will not include in the returned text
     console.log(my_new_name); //
     console.log(my_new_name[1], my_new_name[1]);
+
+    let date = '10/2/2024';
+    console.log(date);
+    let newDate = date.split('/');
+    console.log(newDate);
+
+    let [day , month, year] = newDate; // putting array values into respective variables
+    console.log('day =>',day);
+    console.log('month =>', month);
+
+    // toString
+    let arr = [1, 2, 3];
+    let newValue = expStr.toString;
+    console.log(newValue);
