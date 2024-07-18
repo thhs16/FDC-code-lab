@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="firstNum">
+        <input type="number" id="secNum">
+        <select id="operator">
+            <!-- the value would not be shown if it's nothing as innerHTML -->
+            <option value="plus">+</option> 
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="division">/</option>
+        </select>
+        <!-- <input type="submit" value="OK">  this clear the data -->
+        <input type="button" value="OK">
+    </form>
+
+    <h1>Result : 0</h1>
+</body>
+<script src="calculator.js"></script>
+</html>
