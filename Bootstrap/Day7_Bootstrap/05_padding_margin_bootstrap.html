@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding margin bootstrap</title>
+    <!-- bootstrap css node modules -->
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome css node_modules -->
+    <link
+      rel="stylesheet"
+      href="../../node_modules/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="text-danger">
+      <i class="fa fa-user"></i>padding margin bootstrap
+    </h1>
+    <!-- padding -->
+    <span class="text-bg-secondary p-3">Padding 1</span>
+    <!-- only left & right margin -->
+    <!-- also have 'ml-' 'mr-' -->
+    <span class="text-bg-warning m-5">Margin 1 m-5</span>
+    <br />
+    <span class="text-bg-warning mx-5">Margin 2 mx-5</span>
+    <span class="text-bg-warning">Testing text</span>
+    <br />
+    <!-- left margin -->
+    <span class="text-bg-warning ms-5">Margin 3 ms-5</span>
+    <br />
+    <!-- right margin -->
+    <span class="text-bg-warning me-5">Margin 4 me-5</span>
+    <span class="text-bg-warning">Testing text</span>
+    <br />
+    <!-- top bottom margin -->
+    <!-- no margin applied why???  -->
+    <span class="text-bg-warning my-5">Margin 5 my-5</span>
+    <br />
+    <!-- blank : left, right, top, bottom -->
+    <!-- no margin applied why???  -->
+    <span class="text-bg-warning blank-5">Margin 6 blank-5</span>
+    <br />
+    <!-- size 'auto' on margin or padding -->
+    <!-- only on block element with 'width' -->
+    <span class="text-bg-warning mx-auto">Margin 7 mx-auto span</span><!-- inline element -->
+    <br />
+    <div class="text-bg-warning mx-auto" style="width: 150px;">Margin 8 mx-auto div</div> <!-- width attribute is only used with img ele -->
+    <br>
+    <!-- margin top & bottom --><!-- only work for block elements -->
+    <span class="text-bg-warning mt-5 d-block">Margin 9 mt-5 d-block</span>
+    <br>
+    <span class="text-bg-warning mt-5">Margin 10 mt-5</span>
+    <br>
+    <div class="text-bg-warning mb-5">Margin 11 mb-5</div>
+    <div class="text-bg-warning">Testing text</div>
+  </body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

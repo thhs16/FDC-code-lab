@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align_bootstrap</title>
+    <!-- bootstrap css node modules -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+    <!-- d-flex
+    horizontal ==> justify-content-
+    vertical    ==> align - item (height :   assign) -->
+
+    <!-- align
+
+    *in the parent element*
+    align-items-baseline ==> starting point (at the top)
+    align-items-center  ==> center of the parent element
+    align-items-end     ==> at the bottom of the parent element
+    align-items-start   ==> the same as base line but why???
+
+    *in the child element*
+    align-self-baseline ==> starting point (at the top)
+    align-self-center  ==> center of the parent element
+    align-self-end     ==> at the bottom of the parent element
+    align-self-start   ==> the same as base line but why???
+    -->
+
+    <!-- row column flex 
+    -->
+    <h1>Align_bootstrap</h1>
+    <div class="align-items-start bg-black d-flex justify-content-evenly " style="height : 300px">
+
+        <div class="text-bg-warning p-2">One</div>
+        <div class="text-bg-warning p-2">Two</div>
+        <div class="text-bg-danger p-2 align-self-end">Three</div>
+        <div class="text-bg-warning p-2">Four</div>
+
+    </div>
+</body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
