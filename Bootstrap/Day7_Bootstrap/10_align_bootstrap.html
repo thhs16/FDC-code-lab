@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
 <body>
-    <!-- d-flex
+    <!-- d-flex (row flex direction)
     horizontal ==> justify-content-
     vertical    ==> align - item (height :   assign) -->
 
@@ -27,10 +27,27 @@
     align-self-start   ==> the same as base line but why???
     -->
 
-    <!-- row column flex 
+    <!-- row column(default) : flex direction 
     -->
     <h1>Align_bootstrap</h1>
-    <div class="align-items-start bg-black d-flex justify-content-evenly " style="height : 300px">
+    <!-- <div class="align-items-start bg-black d-flex justify-content-evenly " style="height : 300px"> -->
+        <!-- flex-row-reverse -->
+    <div class="flex-row-reverse align-items-start bg-black d-flex justify-content-evenly " style="height : 300px">
+
+        <div class="text-bg-warning p-2">One</div>
+        <div class="text-bg-warning p-2">Two</div>
+        <div class="text-bg-danger p-2 align-self-end">Three</div>
+        <div class="text-bg-warning p-2">Four</div>
+
+    </div>
+    <br>
+
+    <!-- d-flex (row flex direction)
+    horizontal move ==> align - item (height :   assign)
+    vertical    ==> justify-content- -->
+    <!-- <div class="bg-black d-flex flex-column align-items-center justify-content-evenly" style="height : 300px"> -->
+        <!-- flex-column-reverse -->
+    <div class="flex-column-reverse bg-black d-flex align-items-center justify-content-evenly" style="height : 300px">
 
         <div class="text-bg-warning p-2">One</div>
         <div class="text-bg-warning p-2">Two</div>
