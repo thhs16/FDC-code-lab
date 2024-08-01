@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms_bootstrap</title>
+        <!-- bootstrap css node modules -->
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+</head>
+<body class="bg-body-secondary">
+    <div class="mb-3">
+        <label for="formfile" class="form-label">Default file input example</label>
+        <input type="file" class="form-control" id="formfile">
+    </div>
+    <!-- multiple files -->
+    <div class="mb-3">
+        <label for="formMultiplefile" class="form-label">Multiple files input example</label>
+        <input type="file" class="form-control" id="formMultiplefile" multiple> <!---->
+    </div>
+    <!-- disable files -->
+    <div class="mb-3">
+        <label for="formfileDisabled" class="form-label">Small file input example</label>
+        <input type="file" class="form-control" id="formfileDisable" disabled>
+    </div>
+    <!-- file - small size input -->
+    <div class="mb-3">
+        <label for="formfileSmall" class="form-label">Small file input example</label>
+        <input type="file" class="form-control form-control-sm" id="formfileSmall">
+    </div>
+    <!-- file - large size input -->
+    <div>
+        <label for="formfileLarge" class="form-label">Small file input example</label>
+        <input type="file" class="form-control form-control-lg" id="formfileLarge">
+    </div>
+    
+
+    <!-- input datalist -->
+    <input class="form-control" list="options" placeholder="Type to search">
+    <datalist id="options">
+        <option value="New Yorl"></option>
+        <option value="San fransciscos"></option>
+        <option value="Los Angeles"></option>
+        <option value="Chicago"></option>
+    </datalist>
+
+    <!-- selectbox input -->
+    <select class="form-select" aria-label="Select box">
+        <option>Open this select menu</option>
+        <option value="1">One</option><!-- innerText show a display in the menu list -->
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+</body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

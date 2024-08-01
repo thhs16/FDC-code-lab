@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float labels</title>
+        <!-- bootstrap css node modules -->
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+</head>
+<body>
+    <h1>Float Labels</h1>
+    <div class="form-floating">
+        <input type="email" class="form-control" id="testing" placeholder="">
+        <!-- place holder attribute should be added for bootstrap to function well and for & id -->
+        <label for="testing">Email Address</label>
+    </div>
+    <!-- showing invalid message in floating input -->
+    <div class="form-floating">
+        <input type="email" class="form-control is-invalid" id="testing" placeholder="" value="aungaung@">
+        <!-- place holder attribute should be added for bootstrap to function well and for & id -->
+        <!-- value attribute - aungaung@ -->
+        <label for="testing">Invalid Email</label>
+    </div>
+</body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

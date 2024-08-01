@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css node modules -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+</head>
+<body>
+    <div class="input-group"><!-- group child elements together -->
+        <span class="input-group-text">@</span><!-- if this span is with form-control class value, it will be in input bootstrap design on line 16 -->
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <!-- <span class="form-control">@</span> -->
+    <div class="input-group mt-5 ms-5 w-50 ">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <!-- sizing input group *two times value-->
+    <div class="input-group input-group-sm mt-5 ms-5 w-50 ">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="input-group input-group-lg mt-5 ms-5 w-50 ">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <button class="btn mt-5 btn-outline-danger">hello</button>
+</body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>

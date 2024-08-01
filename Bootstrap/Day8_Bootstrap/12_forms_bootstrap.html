@@ -8,14 +8,51 @@
         <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 
 </head>
-<body>
+<body class="bg-body-secondary">
     <h1>forms_bootstrap</h1>
 
     <!-- bootstrap forms -->
     <label for="example_input_email" class="form-label">Email</label> 
         <!-- when pressed label it will locate its input (showing shadows over input) because of 'for' -->
-    <input type="text" class="m-5 form-control" id="example_input_email">
-    <input type="text" class="m-5 form-control">
+    <input type="text" class="form-control" id="example_input_email">
+        <!-- checkbox - bootstrap -->
+    <input type="checkbox" class="form-check-input"> Male
+    <br>
+        <!-- radio - bootstrap --> <!-- radio has to have the same name to select only one option -->
+    <input type="radio" name="radio_testing"> Thu Thu
+    <input type="radio" name="radio_testing"> Zaw Zaw
+    <input type="radio" name="radio_testing"> Htun Htun
+        <!-- form width - bootstrap -->
+    <input type="text" class="m-5 form-control w-50" placeholder="09xxxxxx">
+        <!-- form text - bootstrap -->
+    <input type="text" class="form-control w-50">
+    <div class="form-text">We will never share your email with anyone else.</div><!-- color and font type changed -->
+        
+        <!-- textarea form control -->
+    <label for="egTextArea"></label>
+    <textarea class="form-control" id="egTextArea" cols="30" rows="5"></textarea>
+
+        <!-- sizing of input space -->
+    <input class="form-control form-control-lg" type="text" placeholder="Enter your name">
+    <input class="form-control" type="text" placeholder="Enter your name">
+    <input class="form-control form-control-sm" type="text" placeholder="Enter your name">
+
+        <!-- full form -->
+        <h3>full form</h3>
+        <form class="row g-3">
+            <!-- row put all the block element: div in a row -->
+            <div class="col-auto">
+                <label for="static-email" class="visually-hidden">Email</label><!-- not showing -->
+                <input type="text" class="form-control-plaintext" id="static-email" value="email@example.com" readonly><!-- form-control-plaintext get rid of the effect -->
+            </div>
+            <div class="col-auto">
+                <label for="egPw" class="form-label visually-hidden">Password</label>
+                <input type="password" class="form-control" id="egPw" placeholder="password">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Confirm identity</button>
+            </div>
+        </form>
 </body>
 <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
