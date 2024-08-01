@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thae Htape Htar San</title>
+    <!-- bootstrap node-modules link -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- font-awesome node-modules link -->
+    <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+<body class="bg-light"><!-- bg-light to get rid of navbar secondary bg color -->
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg bg-light px-5 shadow-sm sticky-top">
+        <div class="container">
+          <a class="navbar-brand text-danger" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" aria-current="page" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" aria-current="page" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+
+      <!-- profile start -->
+        <div class="container-lg px-5 min-vh-100 align-content-center "><!-- sayar didn't add align-content-center, instead he use mt-5 -->
+            <div class="row">
+                <div class="col-md-6 text-center"><!-- center image -->
+                    <img class="rounded-circle" width="70%" src="image/profile.JPG" alt="">
+                </div>
+                <div class="col-md-6 align-content-center">
+                    <p class="text-muted">Hello I'm</p>
+                    <h1 class="text-danger fw-bold text-uppercase">Web Developer</h1>
+                    <h4>Thae Htape Htar San</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, assumenda voluptates saepe, explicabo hic placeat delectus fugiat consequatur ex architecto deleniti dolorum deserunt dolor enim. Laboriosam, aut. Cumque, non eveniet.</p>
+                    <button class="btn btn-danger shadow-sm text-uppercase">My Work</button>
+                </div>
+            </div>
+        </div>
+      <!-- profile end -->
+
+
+      <!-- skill section start -->
+      <div class="container-lg min-vh-100"> <!-- gonna delete  - min-vh-100 -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center pt-1">
+                    <h1 class="fw-bold">About Me</h1>    
+                </div>
+            </div>
+            <div class="row"><!-- second row -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <h3>Freelancer</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni obcaecati nisi dolore et, qui atque similique explicabo officia aspernatur nam vitae, laborum consequuntur quisquam! Repellendus dignissimos perferendis ipsum maiores odio.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center text-uppercase text-muted">
+                        <div class="col-4">
+                            <h4 class="fw-bold fs-1">100+</h4>
+                            <p>Project Completed</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fw-bold fs-1">90+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fw-bold fs-1">95+</h4>
+                            <p>Positive Reviews</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- <button>Download CV</button> -->
+                        <div class="col-lg-6">
+                            <a class="text-uppercase btn btn-danger px-3 shadow-sm me-3" href="#">Download CV</a>
+                            <!-- <i class="fa fa-user"></i> --><!-- testing -->
+                            <!-- version 6.6.0 -->
+                            <!-- <i class="fa-brands fa-facebook"></i> -->
+
+                            <!-- version 4 -->
+                            <a href="#"><i class="fa fa-facebook-square text-dark me-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook-square text-dark me-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook-square text-dark me-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook-square text-dark me-3" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- use different progress bar element setting of bootstrap if u wanna add more than 25,50,75,100 -->
+                    <div>
+                        <h5 class="text-muted">HTML</h5>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar w-100 bg-danger" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </div>
+                    <div>
+                        <h5 class="text-muted">CSS</h5>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar w-75 bg-danger" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-muted">Javascript</h5>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar w-75 bg-danger" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-muted">Bootstrap</h5>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar w-25 bg-danger" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      </div>
+      <!-- skill section end -->
+</body>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
