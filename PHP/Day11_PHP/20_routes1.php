@@ -6,7 +6,7 @@
     <title>Routes PHP</title>
 </head>
 <body>
-    
+    // run under htdocs folder XAMPP`
     <?php 
         require('./20_routes_common.php')
     ?>
