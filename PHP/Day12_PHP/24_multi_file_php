@@ -25,13 +25,36 @@
             // print_r($_FILES);
 
             // the same output
-            print_r ($_FILES['photo']['name']);
+            $file = $_FILES['photo'];
+            $imgNameArr = $file['name'];
+            $imgTmpArr = $file['tmp_name'];
+            print_r ($imgNameArr);
+            print_r ($imgTmpArr);
 
             // the same output
-            foreach( $_FILES as $item){
+            // foreach( $_FILES as $item){
                 
-                 print_r( $item['name'] );
+            //      print_r( $item['name'] );
+            // }
+
+            foreach($imgNameArr as $key => $imgName){
+                // echo $key .':'. $imgName . '<br>';
+
+                $imgTmp = $imgTmpArr[$key];
+                // echo $imgTmp . '<br><br>';
+
+                $target_file = './image/' . $imgName;
+
+                if ( move_uploaded_file( $imgTmp , $target_file) ){
+                    echo 'success upload';
+                } else {
+                    echo 'fail upload';
+                }
+
             }
+
+            // echo '<pre>';
+            // print_r($_FILES);
         }
     ?>
 </body>
