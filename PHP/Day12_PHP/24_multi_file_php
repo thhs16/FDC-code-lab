@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi file upload</title>
+</head>
+<body>
+    <h1>MULTI FILE UPLOAD</h1>
+    <hr>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        
+        <input type="file" name="photo[]" id="" multiple>
+
+        <button name="send_btn">send</button> 
+        <!-- already submit btn -->
+    </form>
+        
+    <?php
+        if( isset( $_POST['send_btn'] ) ){
+
+            echo '<pre>';
+
+            // print_r($_FILES);
+
+            // the same output
+            print_r ($_FILES['photo']['name']);
+
+            // the same output
+            foreach( $_FILES as $item){
+                
+                 print_r( $item['name'] );
+            }
+        }
+    ?>
+</body>
+</html>
