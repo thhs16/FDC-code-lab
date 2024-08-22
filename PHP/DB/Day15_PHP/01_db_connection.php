@@ -6,7 +6,7 @@
     // root is default username for XAMPP and empty string for no password
     try{
     $connection = new PDO("mysql:host=localhost;dbname=fdc;" , 'root' , '');
-    // echo 'connection success';
+    echo 'connection success';
     } catch(PDOException $error) {
         echo '<pre>';
         // echo 'connection fail' . $error;

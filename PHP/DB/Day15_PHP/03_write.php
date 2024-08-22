@@ -7,8 +7,11 @@
     $qry = "insert into datauser (name, age, job) values (?,?,?)";
 
     $rp = $connection->prepare($qry);
-    $rp->execute(['honey', 18 , 'software developer']);
+    $rp->execute(['Mya Mya', 18 , 'software developer']);
 
     $finalRP = $rp->fetchAll(PDO::FETCH_ASSOC);
 
     echo 'creation success';
+    
+    // close db
+    unset($rp);
