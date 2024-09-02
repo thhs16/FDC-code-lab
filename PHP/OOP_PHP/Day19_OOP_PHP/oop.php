@@ -34,8 +34,8 @@
     // $userThree = new User();
 
     echo '<pre>';
-    print_r($userOne);
-    print_r($userOne->user_name);
+    // print_r($userOne);
+    // print_r($userOne->user_name);
     echo $userOne->getLocation(); // can use echo to display return data
-    echo $userOne->setLocation('Mandalay');
-    echo $userOne->getLocation();
+    // echo $userOne->setLocation('Mandalay');
+    // echo $userOne->getLocation();
