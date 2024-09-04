@@ -7,7 +7,7 @@
     class User{
         // declare property outside the constructor
         public $user_name;
-        private $user_location;
+        protected $user_location;
 
         public function __construct($name , $location){
             $this->user_name = $name;
@@ -36,6 +36,6 @@
     echo '<pre>';
     // print_r($userOne);
     // print_r($userOne->user_name);
-    echo $userOne->getLocation(); // can use echo to display return data
+    // echo $userOne->getLocation(); // can use echo to display return data
     // echo $userOne->setLocation('Mandalay');
     // echo $userOne->getLocation();
