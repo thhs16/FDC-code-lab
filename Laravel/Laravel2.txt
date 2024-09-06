@@ -1,0 +1,6 @@
+    collect() 's methods
+    
+    1) where
+    2) array_filter
+    3) sum()
+    4) pluck() , etc.
