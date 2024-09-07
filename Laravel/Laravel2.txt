@@ -4,3 +4,8 @@
     2) array_filter
     3) sum()
     4) pluck() , etc.
+
+    API call
+    Request
+
+    Validation
