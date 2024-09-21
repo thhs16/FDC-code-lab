@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+        <!-- <i class=" fa fa-user text-danger" ></i> -->
         <div class="container m-5">
             <div class="row">
                 <!-- Start of the Form -->
                 <div class="col-4">
                     <form action="" method="post" enctype="multipart/formdata">
 
-                        <img src="" class="w-100" id="output">
+                        <img src="" class="w-100" id="output" class="img-thumbnail">
                         <input type="file" name="image" class="form-control mb-2" onchange="loadFile(event)">
                         <input type="text" name="title" class="form-control mb-2" placeholder="Enter Blogs Title">
                         <textarea name="description" class="form-control mb-2" cols="30" rows="10">Enter blogs description</textarea>
